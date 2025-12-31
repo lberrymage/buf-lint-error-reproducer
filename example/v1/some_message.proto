@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package example.v1;
+
+import "buf/validate/validate.proto";
+import "google/protobuf/field_mask.proto";
+
+message SomeMessage {
+  google.protobuf.FieldMask field_mask = 1 [(buf.validate.field).field_mask.in = "some_field"];
+}

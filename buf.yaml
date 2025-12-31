@@ -1,0 +1,4 @@
+version: v2
+modules:
+deps:
+  - buf.build/bufbuild/protovalidate:v1.1.0
